@@ -80,8 +80,7 @@ select::-ms-expand {
 html {
   font-family: "my_font";
   background: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0px auto;
 }
 
@@ -90,7 +89,6 @@ a:link {
 }
 
 html {
-  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -128,8 +126,7 @@ html body header .logoBox .logoutBtn {
   right: 2%;
   border-radius: 10px;
   background: #dd640b;
-  -webkit-box-shadow: 0px 2px 0px 2px #863901, 0px 0px 0px 2px #863901;
-          box-shadow: 0px 2px 0px 2px #863901, 0px 0px 0px 2px #863901;
+  box-shadow: 0px 2px 0px 2px #863901, 0px 0px 0px 2px #863901;
 }
 html body header .logoBox .logoutBtn.display {
   display: block;
@@ -143,9 +140,7 @@ html body header .logoBox .logoutBtn::before {
   left: 50%;
   top: 5%;
   border-radius: 50px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 2;
 }
 html body header .logoBox .logoutBtn::after {
@@ -157,9 +152,7 @@ html body header .logoBox .logoutBtn::after {
   left: 50%;
   top: 5%;
   border-radius: 10px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 html body header .logoBox .logoutBtn span {
@@ -195,14 +188,13 @@ html body header .marqueeBox .news span {
   position: absolute;
   top: 48%;
   left: 44%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-weight: bold;
+  font-size: 17px;
 }
 html body header .marqueeBox .date {
   display: inline-block;
-  width: 24%;
+  width: 22%;
   height: 0px;
   padding-bottom: 8%;
   position: relative;
@@ -213,21 +205,19 @@ html body header .marqueeBox .date span {
   height: auto;
   top: 48%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-weight: bold;
   color: #ff7095;
+  font-size: 15px;
 }
 html body header .marqueeBox marquee {
   position: absolute;
-  width: 48%;
+  width: 50%;
   height: auto;
   top: 48%;
   right: 0px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 16px;
 }
 html body main {
   width: 100%;
@@ -277,8 +267,6 @@ html body main .midBar {
   width: 100%;
   height: 0px;
   padding-bottom: 20%;
-  background: -webkit-gradient(linear, right top, left top, from(#ff527f), to(#8a1b2b));
-  background: -o-linear-gradient(right, #ff527f 0%, #8a1b2b 100%);
   background: linear-gradient(to left, #ff527f 0%, #8a1b2b 100%);
   background-color: #8a1b2b;
   position: relative;
@@ -304,9 +292,7 @@ html body main .midBar .character .userIC {
   background-size: 100%;
   top: 50%;
   left: 10%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 html body main .midBar .character button {
   width: 70%;
@@ -332,6 +318,7 @@ html body main .midBar .character button span {
   color: #fff;
   top: 38%;
   letter-spacing: 2px;
+  font-size: 16px;
 }
 html body main .midBar .character button span:last-child {
   top: 64%;
@@ -346,9 +333,7 @@ html body main .midBar .btnBox {
   background: #8c1c2c;
   top: 50%;
   left: 38%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
 }
 html body main .midBar .btnBox button {
@@ -393,6 +378,7 @@ html body main .mainBox .gameBox .left button {
   background: #fff;
   border: solid 5px;
   margin-bottom: 1.65vh;
+  font-size: 17px;
 }
 html body main .mainBox .gameBox .left button:last-child {
   margin: 0px;
@@ -400,36 +386,26 @@ html body main .mainBox .gameBox .left button:last-child {
 html body main .mainBox .gameBox .left button::before {
   content: "";
   position: absolute;
-  width: 91%;
+  width: 87%;
   height: 0px;
-  padding-bottom: 22%;
+  padding-bottom: 13%;
   top: 12%;
   left: 50%;
   border-radius: 15px 15px 0px 0px;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#ffffff90));
-  background: -o-linear-gradient(bottom, transparent, #ffffff90);
   background: linear-gradient(to top, transparent, #ffffff90);
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body main .mainBox .gameBox .left button.slot {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #0e6496), color-stop(81%, #1795ce));
-  background: -o-linear-gradient(bottom, #0e6496 13%, #1795ce 81%);
   background: linear-gradient(to top, #0e6496 13%, #1795ce 81%);
   background-color: #0e6496;
   border-color: #104167;
-  -webkit-box-shadow: 0px 3px 3px 0px #4fe4ff inset;
-          box-shadow: 0px 3px 3px 0px #4fe4ff inset;
+  box-shadow: 0px 3px 3px 0px #4fe4ff inset;
 }
 html body main .mainBox .gameBox .left button.fish {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #b1940d), color-stop(81%, #c9ba3a));
-  background: -o-linear-gradient(bottom, #b1940d 13%, #c9ba3a 81%);
   background: linear-gradient(to top, #b1940d 13%, #c9ba3a 81%);
   background-color: #b1940d;
   border-color: #5e4f11;
-  -webkit-box-shadow: 0px 3px 3px 0px #ffff88 inset;
-          box-shadow: 0px 3px 3px 0px #ffff88 inset;
+  box-shadow: 0px 3px 3px 0px #ffff88 inset;
 }
 html body main .mainBox .gameBox .left button.fish:hover, html body main .mainBox .gameBox .left button.fish:active, html body main .mainBox .gameBox .left button.fish.active {
   background: #294a75;
@@ -438,16 +414,13 @@ html body main .mainBox .gameBox .left button.fish:hover::after, html body main 
   background: #294a75;
 }
 html body main .mainBox .gameBox .left button.fish span {
-  font-size: 0.8rem;
+  font-size: 14px;
 }
 html body main .mainBox .gameBox .left button.live {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #7c3675), color-stop(81%, #a24f80));
-  background: -o-linear-gradient(bottom, #7c3675 13%, #a24f80 81%);
   background: linear-gradient(to top, #7c3675 13%, #a24f80 81%);
   background-color: #7c3675;
   border-color: #4e2e4b;
-  -webkit-box-shadow: 0px 3px 3px 0px #da9ece inset;
-          box-shadow: 0px 3px 3px 0px #da9ece inset;
+  box-shadow: 0px 3px 3px 0px #da9ece inset;
 }
 html body main .mainBox .gameBox .left button.live:hover, html body main .mainBox .gameBox .left button.live:active, html body main .mainBox .gameBox .left button.live.active {
   background-color: #294770;
@@ -456,13 +429,10 @@ html body main .mainBox .gameBox .left button.live:hover::after, html body main 
   background-color: #294770;
 }
 html body main .mainBox .gameBox .left button.sport {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #007671), color-stop(81%, #3a9995));
-  background: -o-linear-gradient(bottom, #007671 13%, #3a9995 81%);
   background: linear-gradient(to top, #007671 13%, #3a9995 81%);
   background-color: #007671;
   border-color: #184c4a;
-  -webkit-box-shadow: 0px 3px 3px 0px #72e8e3 inset;
-          box-shadow: 0px 3px 3px 0px #72e8e3 inset;
+  box-shadow: 0px 3px 3px 0px #72e8e3 inset;
 }
 html body main .mainBox .gameBox .left button.sport:hover, html body main .mainBox .gameBox .left button.sport:active, html body main .mainBox .gameBox .left button.sport.active {
   background-color: #28446a;
@@ -471,13 +441,10 @@ html body main .mainBox .gameBox .left button.sport:hover::after, html body main
   background-color: #28446a;
 }
 html body main .mainBox .gameBox .left button.boat {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #dc630a), color-stop(81%, #de921a));
-  background: -o-linear-gradient(bottom, #dc630a 13%, #de921a 81%);
   background: linear-gradient(to top, #dc630a 13%, #de921a 81%);
   background-color: #dc630a;
   border-color: #7e2f08;
-  -webkit-box-shadow: 0px 3px 3px 0px #ffe168 inset;
-          box-shadow: 0px 3px 3px 0px #ffe168 inset;
+  box-shadow: 0px 3px 3px 0px #ffe168 inset;
 }
 html body main .mainBox .gameBox .left button.boat:hover, html body main .mainBox .gameBox .left button.boat:active, html body main .mainBox .gameBox .left button.boat.active {
   background-color: #274265;
@@ -486,16 +453,13 @@ html body main .mainBox .gameBox .left button.boat:hover::after, html body main 
   background-color: #274265;
 }
 html body main .mainBox .gameBox .left button.boat span {
-  font-size: 0.7rem;
+  font-size: 13px;
 }
 html body main .mainBox .gameBox .left button.card {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(13%, #e04c80), color-stop(81%, #f081a7));
-  background: -o-linear-gradient(bottom, #e04c80 13%, #f081a7 81%);
   background: linear-gradient(to top, #e04c80 13%, #f081a7 81%);
   background-color: #e04c80;
   border-color: #a0214d;
-  -webkit-box-shadow: 0px 3px 3px 0px #ffd0f5 inset;
-          box-shadow: 0px 3px 3px 0px #ffd0f5 inset;
+  box-shadow: 0px 3px 3px 0px #ffd0f5 inset;
 }
 html body main .mainBox .gameBox .left button.card:hover, html body main .mainBox .gameBox .left button.card:active, html body main .mainBox .gameBox .left button.card.active {
   background-color: #284061;
@@ -504,19 +468,16 @@ html body main .mainBox .gameBox .left button.card:hover::after, html body main 
   background-color: #284061;
 }
 html body main .mainBox .gameBox .left button.card span {
-  font-size: 0.7rem;
+  font-size: 13px;
 }
 html body main .mainBox .gameBox .left button:hover, html body main .mainBox .gameBox .left button:active, html body main .mainBox .gameBox .left button.active {
   background: #2a4d7c;
   border-color: #122845;
   border-width: 5px 0px 5px 5px;
-  -webkit-box-shadow: 0px 2px 0px 0px #6899da inset;
-          box-shadow: 0px 2px 0px 0px #6899da inset;
+  box-shadow: 0px 2px 0px 0px #6899da inset;
   border-radius: 50px 0px 0px 50px;
 }
 html body main .mainBox .gameBox .left button:hover::before, html body main .mainBox .gameBox .left button:active::before, html body main .mainBox .gameBox .left button.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#0000003d));
-  background: -o-linear-gradient(bottom, transparent, #0000003d);
   background: linear-gradient(to top, transparent, #0000003d);
 }
 html body main .mainBox .gameBox .left button:hover::after, html body main .mainBox .gameBox .left button:active::after, html body main .mainBox .gameBox .left button.active::after {
@@ -525,8 +486,7 @@ html body main .mainBox .gameBox .left button:hover::after, html body main .main
   border-style: solid;
   border-width: 5px 0px 5px 0px;
   background: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 0px 0px #6899da inset;
-          box-shadow: 0px 2px 0px 0px #6899da inset;
+  box-shadow: 0px 2px 0px 0px #6899da inset;
   border-color: #122845;
   width: 18%;
   height: 100%;
@@ -550,13 +510,10 @@ html body main .mainBox .gameBox .right .outerBox {
   height: calc(44.24vh - 10px);
   background: #fff;
   border: solid 5px #122845;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f, #2a4d7c);
   background: linear-gradient(to top, #273f5f, #2a4d7c);
   background-color: #273f5f;
   border-radius: 18px;
-  -webkit-box-shadow: 0px 2px 0px 0px #6899da inset;
-          box-shadow: 0px 2px 0px 0px #6899da inset;
+  box-shadow: 0px 2px 0px 0px #6899da inset;
 }
 html body main .mainBox .gameBox .right .outerBox.firstActive {
   border-radius: 0px 18px 18px 18px;
@@ -571,8 +528,7 @@ html body main .mainBox .gameBox .right .outerBox .innerBox {
   padding: 0px 5% 8%;
   background: #507ab0;
   border: solid 2px #5885c2;
-  -webkit-box-shadow: 0px 2px 2px 0px #365276 inset;
-          box-shadow: 0px 2px 2px 0px #365276 inset;
+  box-shadow: 0px 2px 2px 0px #365276 inset;
   border-radius: 18px;
   text-align: left;
   overflow-x: hidden;
@@ -590,10 +546,9 @@ html body main .mainBox .gameBox .right .outerBox .innerBox a span {
   position: absolute;
   bottom: -20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
+  font-size: 14px;
 }
 html body main .mainBox .gameBox .right .outerBox .innerBox div {
   display: none;
@@ -704,8 +659,6 @@ html body footer {
 html body footer ul {
   width: 100%;
   height: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00bdb3), color-stop(65%, #1acdbb), to(#45f7e5));
-  background: -o-linear-gradient(top, #00bdb3 0%, #1acdbb 65%, #45f7e5 100%);
   background: linear-gradient(to bottom, #00bdb3 0%, #1acdbb 65%, #45f7e5 100%);
   text-align: center;
   padding: 1% 0%;
@@ -715,14 +668,10 @@ html body footer ul li {
   width: 19%;
   height: 0px;
   padding-bottom: 11%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#007f78), color-stop(65%, #1acdbb), to(#45f7e5));
-  background: -o-linear-gradient(bottom, #007f78 0%, #1acdbb 65%, #45f7e5 100%);
   background: linear-gradient(to top, #007f78 0%, #1acdbb 65%, #45f7e5 100%);
   background-color: #007f78;
 }
 html body footer ul li:hover, html body footer ul li:active, html body footer ul li.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fc517d), to(#8c1c2c));
-  background: -o-linear-gradient(bottom, #fc517d 0%, #8c1c2c 100%);
   background: linear-gradient(to top, #fc517d 0%, #8c1c2c 100%);
   background-color: #8c1c2c;
 }
@@ -782,9 +731,7 @@ html body .jumpBox .post {
   position: fixed;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .jumpBox .post.display {
   display: block;
@@ -812,6 +759,7 @@ html body .jumpBox .post .top h1 {
   font-weight: bold;
   color: #783c00;
   letter-spacing: 5px;
+  font-size: 16px;
 }
 html body .jumpBox .post .top button {
   width: 23%;
@@ -821,13 +769,11 @@ html body .jumpBox .post .top button {
   border-radius: 10px;
   border: solid 3px #3e1f00;
   margin: 9% 0px 0px 0px;
-  -webkit-box-shadow: 0px -3px 0px 0px #512800 inset;
-          box-shadow: 0px -3px 0px 0px #512800 inset;
+  box-shadow: 0px -3px 0px 0px #512800 inset;
 }
 html body .jumpBox .post .top button:hover, html body .jumpBox .post .top button:active, html body .jumpBox .post .top button.active {
   background: #00aea3;
-  -webkit-box-shadow: 0px 4px 0px 0px #00887f inset;
-          box-shadow: 0px 4px 0px 0px #00887f inset;
+  box-shadow: 0px 4px 0px 0px #00887f inset;
 }
 html body .jumpBox .post .top button:hover::before, html body .jumpBox .post .top button:active::before, html body .jumpBox .post .top button.active::before {
   background: #00867d;
@@ -849,9 +795,7 @@ html body .jumpBox .post .top button::before {
   background: #a4601b;
   top: 8%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 50px;
   z-index: 1;
 }
@@ -864,9 +808,7 @@ html body .jumpBox .post .top button::after {
   background: #8b4b0b;
   top: 8%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 10px;
 }
 html body .jumpBox .post .top button:nth-of-type(2) span {
@@ -901,8 +843,7 @@ html body .jumpBox .post .mid .messageBox {
   margin: 0px auto 5%;
   background: #ffd84f;
   border: solid 5px #fff;
-  -webkit-box-shadow: 0px 0px 0px 5px #783c00;
-          box-shadow: 0px 0px 0px 5px #783c00;
+  box-shadow: 0px 0px 0px 5px #783c00;
   border-radius: 10px;
 }
 html body .jumpBox .post .mid .messageBox:last-child {
@@ -914,14 +855,16 @@ html body .jumpBox .post .mid .messageBox h1 {
   font-weight: bold;
   padding: 3% 0px;
   letter-spacing: 3px;
+  font-size: 16px;
 }
 html body .jumpBox .post .mid .messageBox h1 span {
   font-size: 0.8rem;
   color: #402000;
   padding-left: 3%;
+  font-size: 12px;
 }
 html body .jumpBox .post .mid .messageBox p {
-  font-size: 0.9rem;
+  font-size: 15px;
 }
 html body .jumpBox .post .bottom {
   width: 100%;
@@ -937,9 +880,7 @@ html body .jumpBox .loginWindow {
   position: fixed;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .jumpBox .loginWindow.display {
   display: block;
@@ -1001,8 +942,7 @@ html body .jumpBox .loginWindow .mid button {
   padding-bottom: 12%;
   border-radius: 10px;
   position: relative;
-  -webkit-box-shadow: 0px 4px 0px 2px #006f64, 0px 0px 0px 2px #006f64;
-          box-shadow: 0px 4px 0px 2px #006f64, 0px 0px 0px 2px #006f64;
+  box-shadow: 0px 4px 0px 2px #006f64, 0px 0px 0px 2px #006f64;
 }
 html body .jumpBox .loginWindow .mid button::before {
   content: "";
@@ -1013,9 +953,7 @@ html body .jumpBox .loginWindow .mid button::before {
   left: 50%;
   top: 5%;
   border-radius: 50px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 2;
 }
 html body .jumpBox .loginWindow .mid button::after {
@@ -1027,9 +965,7 @@ html body .jumpBox .loginWindow .mid button::after {
   left: 50%;
   top: 5%;
   border-radius: 10px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 1;
 }
 html body .jumpBox .loginWindow .mid button.loginBtn span {
@@ -1042,15 +978,11 @@ html body .jumpBox .loginWindow .mid button.loginBtn span {
 }
 html body .jumpBox .loginWindow .mid button.signupBtn {
   background: #8c1c2c;
-  -webkit-box-shadow: 0px 4px 0px 2px #540e18, 0px 0px 0px 2px #540e18;
-          box-shadow: 0px 4px 0px 2px #540e18, 0px 0px 0px 2px #540e18;
+  box-shadow: 0px 4px 0px 2px #540e18, 0px 0px 0px 2px #540e18;
 }
 html body .jumpBox .loginWindow .mid button.signupBtn:hover, html body .jumpBox .loginWindow .mid button.signupBtn:active, html body .jumpBox .loginWindow .mid button.signupBtn.active {
-  -webkit-box-shadow: 0px 0px 0px 2px #540e18;
-          box-shadow: 0px 0px 0px 2px #540e18;
-  -webkit-transform: translateY(10%);
-      -ms-transform: translateY(10%);
-          transform: translateY(10%);
+  box-shadow: 0px 0px 0px 2px #540e18;
+  transform: translateY(10%);
 }
 html body .jumpBox .loginWindow .mid button.signupBtn span {
   display: block;
@@ -1061,11 +993,8 @@ html body .jumpBox .loginWindow .mid button.signupBtn span {
   z-index: 3;
 }
 html body .jumpBox .loginWindow .mid button:hover, html body .jumpBox .loginWindow .mid button:active, html body .jumpBox .loginWindow .mid button.active {
-  -webkit-box-shadow: 0px 0px 0px 2px #006f64;
-          box-shadow: 0px 0px 0px 2px #006f64;
-  -webkit-transform: translateY(10%);
-      -ms-transform: translateY(10%);
-          transform: translateY(10%);
+  box-shadow: 0px 0px 0px 2px #006f64;
+  transform: translateY(10%);
 }
 html body .jumpBox .loginWindow .bottom {
   width: 100%;
@@ -1091,9 +1020,7 @@ button span {
   position: absolute;
   left: 50%;
   top: 46%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: 1024px) and (max-width: 1024px) {
@@ -1147,36 +1074,27 @@ button span {
     height: 120%;
   }
 }
-@media only screen and (max-width: 414px) {
-  h1, span, p {
-    font-size: 1rem;
-  }
-}
 @media only screen and (max-width: 360px) {
-  h1 {
-    font-size: 0.9rem;
+  html body header .marqueeBox .news span {
+    font-size: 15px;
   }
-
-  span, p {
-    font-size: 0.7rem;
+  html body header .marqueeBox .date span {
+    font-size: 12px;
   }
-
+  html body main .midBar .character button span {
+    font-size: 13px;
+  }
+  html body main .mainBox .gameBox .left button {
+    font-size: 14px;
+  }
+  html body main .mainBox .gameBox .left button.fish span, html body main .mainBox .gameBox .left button.boat span, html body main .mainBox .gameBox .left button.card span {
+    font-size: 12px;
+  }
   html body .jumpBox .post .mid .messageBox h1 span {
-    font-size: 0.7rem;
+    font-size: 12px;
   }
   html body .jumpBox .post .mid .messageBox p {
-    font-size: 0.7rem;
-  }
-}
-@media only screen and (max-width: 280px) {
-  html body main .mainBox .gameBox .right .outerBox .innerBox .slotGame a:nth-of-type(odd), html body main .mainBox .gameBox .right .outerBox .innerBox .liveGame a:nth-of-type(odd) {
-    margin-right: 4%;
-  }
-  html body main .mainBox .gameBox .right .outerBox .innerBox a span {
-    width: 113%;
-  }
-  html body footer ul li {
-    width: 18.8%;
+    font-size: 12px;
   }
 }
 html body .signupPage .signupWindow {
@@ -1187,8 +1105,7 @@ html body .signupPage .signupWindow {
   margin: 0px auto;
   text-align: center;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 7px 0px 3px #000, 0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
-          box-shadow: 2px 7px 0px 3px #000, 0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
+  box-shadow: 2px 7px 0px 3px #000, 0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
 }
 html body .signupPage .signupWindow h1 {
   color: #fff;
@@ -1210,21 +1127,15 @@ html body .signupPage .signupWindow button {
   width: 45%;
   height: 0px;
   padding-bottom: 17%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#135838), to(#20873b));
-  background: -o-linear-gradient(bottom, #135838 0%, #20873b 100%);
   background: linear-gradient(to top, #135838 0%, #20873b 100%);
   background-color: #135838;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
-          box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
+  box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
 }
 html body .signupPage .signupWindow button:hover, html body .signupPage .signupWindow button:active, html body .signupPage .signupWindow button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#135838), to(#20873b));
-  background: -o-linear-gradient(top, #135838 0%, #20873b 100%);
   background: linear-gradient(to bottom, #135838 0%, #20873b 100%);
   background-color: #20873b;
-  -webkit-box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
-          box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
+  box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
 }
 html body .signupPage .signupWindow button span {
   display: block;
