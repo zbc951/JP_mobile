@@ -208,7 +208,7 @@ html body header .marqueeBox .date span {
   transform: translate(-50%, -50%);
   font-weight: bold;
   color: #ff7095;
-  font-size: 15px;
+  font-size: 13px;
 }
 html body header .marqueeBox marquee {
   position: absolute;
