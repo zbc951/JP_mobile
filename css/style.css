@@ -356,7 +356,7 @@ html body main .midBar .btnBox button:nth-of-type(4) {
 }
 html body main .mainBox {
   width: 100%;
-  height: 54vh;
+  height: 48vh;
   text-align: center;
 }
 html body main .mainBox .gameBox {
@@ -1005,7 +1005,7 @@ html body .jumpBox .loginWindow .bottom {
 }
 html body .bg {
   width: 100%;
-  height: 100%;
+  height: 120%;
   position: absolute;
   top: 0px;
   background: url("../images/mainBG.png") no-repeat top center;
