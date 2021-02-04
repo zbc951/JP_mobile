@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP_mobile_signup</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body ontouchstart="">
+    <!--main-->
+    <main class="signupPage">
+        <!--主視窗-->
+        <section class="signupWindow">
+            <h1>アカウントを登録</h1>
+            <input type="text" value="アカウント" onfocus="if(value=='アカウント'){value=''}" onblur="if(value ==''){value='アカウント'}">
+            <input type="text" value="パスワード" onfocus="if(value=='パスワード'){value='',type='password'}" onblur="if(value ==''){value='パスワード',type='text'}">
+            <input type="text" value="パスワードを確認してください" onfocus="if(value=='パスワードを確認してください'){value=''}" onblur="if(value ==''){value='パスワードを確認してください'}">
+            <input type="text" value="連絡先番号" onfocus="if(value=='連絡先番号'){value=''}" onblur="if(value ==''){value='連絡先番号'}">
+            <input type="text" value="認証コード" onfocus="if(value=='認証コード'){value=''}" onblur="if(value ==''){value='認証コード'}">
+            <input type="text" value="招待コード" onfocus="if(value=='招待コード'){value=''}" onblur="if(value ==''){value='招待コード'}">
+            <button><span></span></button>
+        </section>
+    </main>
+    <!--bg-->
+    <div class="signup_bg"></div>
+</body>
+</html>
