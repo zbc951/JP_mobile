@@ -1030,57 +1030,6 @@ button span {
   transform: translate(-50%, -50%);
 }
 
-@media (min-width: 1024px) and (max-width: 1024px) {
-  h1, span, p {
-    font-size: 2.5rem;
-  }
-
-  html body footer ul li {
-    width: 19.5%;
-  }
-  html body .jumpBox .post .mid .messageBox h1 span {
-    font-size: 2rem;
-  }
-  html body .jumpBox .post .mid .messageBox p {
-    font-size: 2rem;
-  }
-  html body .bg {
-    height: 120%;
-  }
-}
-@media (min-width: 768px) and (max-width: 768px) {
-  h1, span, p {
-    font-size: 2rem;
-  }
-
-  html body footer ul li {
-    width: 19.5%;
-  }
-  html body .jumpBox .post .mid .messageBox h1 span {
-    font-size: 1.5rem;
-  }
-  html body .jumpBox .post .mid .messageBox p {
-    font-size: 1.5rem;
-  }
-  html body .bg {
-    height: 120%;
-  }
-}
-@media (min-width: 540px) and (max-width: 540px) {
-  h1, span, p {
-    font-size: 1.3rem;
-  }
-
-  html body main .mainBox .gameBox .left button::before {
-    padding-bottom: 13%;
-  }
-  html body footer ul li {
-    width: 19.4%;
-  }
-  html body .bg {
-    height: 120%;
-  }
-}
 @media only screen and (max-width: 360px) {
   html body header .marqueeBox .news span {
     font-size: 15px;
